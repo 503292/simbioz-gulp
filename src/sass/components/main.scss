@@ -1,0 +1,252 @@
+.main {
+  background-image: url('../../images/bg-new-york.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    text-transform: uppercase;
+    text-shadow: 1px 4px 5px rgba(27, 12, 7, 0.38);
+    font-size: 18px;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    width: 320px;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+      width: 600px;
+    }
+  }
+  &__select {
+    color: $grey;
+    width: 300px;
+
+    &_gap {
+      height: 15px;
+    }
+
+    &_title1,
+    &_title2,
+    &_title3 {
+      background: rgba(255, 255, 255, 0.9);
+      background-image: url('../../images/arrow1.svg');
+      background-position: right 20px bottom 50%;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 10px 20px;
+      text-align: start;
+      display: flex;
+      align-items: flex-end;
+
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 1.6;
+
+      @media (min-width: 768px) {
+        background-image: url('../../images/arrow2.svg');
+      }
+    }
+  }
+}
+.section_select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  width: 330px;
+
+  @media (min-width: 768px) {
+    width: 740px;
+  }
+}
+.select_list_1,
+.select_list_2,
+.select_list_3 {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-weight: normal;
+  font-size: 14px;
+  color: $blue;
+
+  &__choice {
+    background: rgba(255, 255, 255, 0.9);
+    list-style: none;
+    padding: 5px 20px;
+  }
+}
+
+.choice {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  color: $blue;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+*    section 2
+*/
+
+.section_form {
+  text-align: left;
+}
+
+.form {
+  padding: 0 20px;
+
+  &__order {
+    font-size: 14px;
+
+    &_title {
+      margin: 0 0 20px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &_service {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+    &_service h4 {
+      margin: 0 0 10px;
+      font-weight: normal;
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+
+    &_service p {
+      margin: 0 0 10px;
+      padding: 5px 10px;
+      border: 1px solid $grey;
+      border-radius: 7px;
+      width: 100%;
+    }
+    &_description {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+    &_description h4 {
+      margin: 0 0 10px;
+      font-weight: normal;
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+    &_description textarea {
+      margin: 0 0 10px;
+      padding: 5px 10px;
+      width: 100%;
+      border: 1px solid $grey;
+      border-radius: 7px;
+    }
+    &_img {
+      color: $blue;
+
+      @media (min-width: 768px) {
+        padding: 0 0  0 25%;
+      }
+    }
+  }
+
+  &__profile {
+    width: 100%;
+    font-size: 14px;
+
+    &_title {
+      margin: 0 0 20px;
+    }
+    &_name {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+
+    &_name h4 {
+      margin: 0 0 10px;
+      font-weight: normal;
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+
+    &_email {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+    &_email h4 {
+      margin: 0 0 10px;
+      font-weight: normal;
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+    &_phone {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+    &_phone h4 {
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+      margin: 0 0 10px;
+      font-weight: normal;
+    }
+  }
+
+  &__profile div input {
+    width: 100%;
+    border: 1px solid $grey;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 0 0 10px;
+  }
+  &__profile div h4 {
+    display: flex;
+    align-items: center;
+  }
+
+  &__send_btn {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.btn {
+  color: $blue;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: $light-grey;
+  padding: 5px;
+  border: 1px solid $light-blue;
+  border-radius: 7px;
+  margin-bottom: 2px;
+  -webkit-box-shadow: 1px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 6px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 6px 23px -10px rgba(0, 0, 0, 0.75);
+}
+.btn:hover {
+  background-color: $grey;
+  color: #fff;
+}
