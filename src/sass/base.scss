@@ -26,3 +26,9 @@ img {
     width: 740px;
   }
 }
+
+.wrapper {
+  @media (min-width: 1280px) {
+    width: 1200px;
+  }
+}
