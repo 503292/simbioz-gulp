@@ -102,8 +102,6 @@ refs.selectTitle2.addEventListener('click', dropTmpHandler_2);
 const dropTmpHandler_3 = e => {
   const findByStr2 = localStorage.getItem('tmpStr2');
   const findByStr3 = localStorage.getItem('tmpStr3');
-  console.log(findByStr2);
-  console.log(findByStr3);
 
   const cutObject = obj1
     .find(el => el.name === findByStr2)
@@ -125,8 +123,6 @@ const dropTmpHandler_3 = e => {
 
   const insertList3 = createSelect_3(cutObject);
 
-  console.log(insertList3, 'insertList3');
-
   refs.select.addEventListener('click', () => {
     refs.selectTitle3.after(insertList3);
   });
@@ -139,7 +135,6 @@ const dropTmpHandler_3 = e => {
     refs.main.style.backgroundImage = 'none';
     localStorage.setItem('tmpStr3', e.target.innerText);
     refs.userChoice.textContent = e.target.innerText;
-    // localStorage.getItem('tmpStr3');
   };
 
   insertList3.addEventListener('click', insertList1Handler3);

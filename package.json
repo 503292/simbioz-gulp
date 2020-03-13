@@ -9,16 +9,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
-  },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
-  },
+  "homepage": "https://503292.github.io/simbioz-gulp/",
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
